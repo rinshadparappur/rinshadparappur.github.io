@@ -1,0 +1,69 @@
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden !important;
+    }
+.col_revers{
+    /* display: flex; */
+    flex-direction: column-reverse;
+    
+}
+.box_bg {
+    margin: 0px 0px !important;
+}
+.arrow_line{
+    display: none;
+
+}
+.main_head {
+    /* padding: 50px; */
+top:0px !important;
+}
+.pragraf_color {
+    padding: 0px !important;
+    
+}
+.main_div{
+    display: block !important;
+}
+.call_image img{
+    width: 100%;
+}
+.box_bg {
+    margin: 30px !important;
+}
+.slick-dots {
+    /* top: 200px;
+    left: 78px; */
+    display: none !important;
+
+}
+.lets_form {
+    padding-top: 15px;
+}
+.arrow_line {
+display: none;
+}
+.projectspostion {
+   display: none;
+}
+.sixe_months-experience {
+   display: none;
+}
+.text_color {
+    font-size: 55px !important;
+  
+}
+.main_headitext {
+    font-size: 55px !important;
+    
+}
+.card-1 {
+    display: flex;
+    padding: 36px 18px !important;
+}
+.pragraf_color {
+    max-width: 768px;
+    margin: 0 auto !important;
+
+}
+}
