@@ -46,8 +46,9 @@ a{
 
 
 
-.bg_canvas{
-    background-color: #230c81ec   ;
+.bg_canvas {
+    background-color: #230c8199;
+    backdrop-filter: blur(4px);
 }
 .nave_bar li{
  list-style: none !important;
@@ -59,6 +60,23 @@ a{
     /* left: -79px; */
     top: -7px;
 }
+
+/*nave-two  */
+
+.collapse .navbar-collapse{
+    display: flex;
+}
+
+.fixed-top{
+    z-index: 10;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* nave_two */
 
 .address_pading li{
   margin-left: 34px;
@@ -145,9 +163,16 @@ a{
 /* body_section */
 
 
+/*  */
+.navbar{
+   width: 100%;
+}
 
+.bg-body-tertiary{
+    
+} 
 
-
+/*  */
 .main_headitext{
     color: #000;
     font-family: Raleway;
@@ -206,7 +231,7 @@ a{
     background-color: #5b38e3;
     color: #ffffff;
     font-size: 18px;
-    padding: 15px 30px;
+    padding: 15px 29px;
     border-radius: 10px;
     border: none;
 }
@@ -256,10 +281,10 @@ a{
 }
 
 .profile_imge{
-display: flex;
-justify-content: center;
-align-items: center;
-
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
 }
 
 .profile_imge img{
@@ -508,7 +533,7 @@ align-items: center;
     padding: 15px;
 }
 .project_img img{
-width: 100%;
+ width: 100%;
 }
 .img_border{
     border-radius: 10px;
@@ -880,4 +905,8 @@ button.btn-close.btn-close-white {
 
 .whatsapp_btn img{
     width: 25px;
+}
+
+.offcanvas.show:not(.hiding), .offcanvas.showing{
+    backdrop-filter: blur(30px);
 }
