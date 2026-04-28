@@ -168,9 +168,7 @@ a{
    width: 100%;
 }
 
-.bg-body-tertiary{
-    
-} 
+
 
 /*  */
 .main_headitext{
@@ -479,10 +477,10 @@ a{
     filter:drop-shadow(0px 0px 50px #D7CEFC);-webkit-animation: mover 1s infinite  alternate;animation: mover 1s infinite  alternate;
 }
 
-@-webkit-keyframes mover {
+/* @-webkit-keyframes mover {
     0%{transform: translateY(0);}
     100%{transform: translateY(-10px);}
-}
+} */
 
 
 /* ///////////////////////// */
@@ -537,7 +535,7 @@ a{
 }
 .img_border{
     border-radius: 10px;
-    /* border: solid #83aaff  1px;  */
+ border: solid #83aaff  1px;
 }
 
 .icons_social{
@@ -793,6 +791,7 @@ a{
     text-align: center;
     padding-top: 7px;
     color: #f5f5f5;
+    
 
 }
 
@@ -909,4 +908,115 @@ button.btn-close.btn-close-white {
 
 .offcanvas.show:not(.hiding), .offcanvas.showing{
     backdrop-filter: blur(30px);
+}
+
+
+
+
+/*    <!-- filter-gallery --> */
+
+/* .card {
+  transition: all 0.4s ease;
+} */
+
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.filters button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 25px;
+  background: #e6e6e6;
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filters button:hover {
+  background: #5b4bff;
+  color: #fff;
+}
+
+.filters button.active {
+  background: #5b4bff;
+  color: #fff;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+.card{
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  height: auto;
+  transition: all 0.4s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;      /* 👈 this fixes white space */
+  display: block;
+  border-radius: 15px;
+}
+/* .card {
+  transform: scale(1);
+  opacity: 1;
+} */
+
+/* .card.hide {
+  transform: scale(0.9);
+  opacity: 0;
+  pointer-events: none;
+} */
+
+.card {
+  transition: all 0.4s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* responsive */
+@media (max-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+/*    <!-- filter-gallery --> */
+
+
+.floating-icons {
+  position: fixed;
+  z-index: 999;
+}
+
+
+/* skills section above icons */
+#skills {
+  position: relative;
+  z-index: 1;
 }

@@ -28,9 +28,9 @@ top:0px !important;
 .call_image img{
     width: 100%;
 }
-.box_bg {
+/* .box_bg {
     margin: 30px !important;
-}
+} */
 .slick-dots {
     /* top: 200px;
     left: 78px; */
@@ -66,5 +66,39 @@ display: none;
     margin: 0 auto !important;
 
 }
+}
+
+.design_skillz {
+  justify-content: center;
+}
+
+.card-1 {
+  text-align: center;
+}
+
+.card-1 img {
+  max-width: 80px;
+}
+
+/* Mobile fix */
+@media (max-width: 576px) {
+  .card-1 img {
+    max-width: 60px;
+  }
+}
+@media (max-width: 576px){
+
+.col-4{
+padding:5px;
+}
+
+.subheading{
+font-size:11px;
+}
+
+.service_img img{
+width:30px;
+}
+
 }
 

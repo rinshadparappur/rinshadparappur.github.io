@@ -15,7 +15,7 @@
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 2,
-    Speed:1000,
+    speed:1000,
     autoplay: true,
     responsive: [
       {
@@ -96,4 +96,10 @@
     });
     
   });
+
+
+
+ 
+
+
 
